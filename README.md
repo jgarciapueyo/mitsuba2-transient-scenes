@@ -1,0 +1,1 @@
+# mitsuba2-transient-scenes
