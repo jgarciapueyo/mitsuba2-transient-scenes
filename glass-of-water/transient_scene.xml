@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <scene version="0.5.0" >
-	<integrator type="path" >
+	<integrator type="transientpath" >
 		<integer name="maxDepth" value="12" />
 	</integrator>
 	<sensor type="perspective" >
@@ -12,9 +12,11 @@
 		<sampler type="independent" >
 			<integer name="sampleCount" value="64" />
 		</sampler>
-		<film type="hdrfilm" >
+		<film type="streakhdrfilm" >
 			<integer name="width" value="320" />
 			<integer name="height" value="180" />
+			<integer name="time" value="100" />
+			<float name="exposure_time" value="1" />
 			<string name="fileFormat" value="openexr" />
 			<string name="pixelFormat" value="rgb" />
 			<boolean name="banner" value="false" />
