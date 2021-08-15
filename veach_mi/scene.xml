@@ -5,7 +5,7 @@
 -->
 <scene version="0.4.0">
 	<integrator type="path">
-		<integer name="maxDepth" value="3"/>
+		<integer name="maxDepth" value="10"/>
 	</integrator>
 
 	<sensor type="perspective">
@@ -18,12 +18,12 @@
 		</transform>
 
 		<sampler type="independent">
-			<integer name="sampleCount" value="64"/>
+			<integer name="sampleCount" value="256"/>
 		</sampler>
 
 		<film type="hdrfilm">
-			<integer name="width" value="192"/>
-			<integer name="height" value="128"/>
+			<integer name="width" value="1536"/>
+			<integer name="height" value="1024"/>
 			<boolean name="banner" value="true"/>
 			<rfilter name="rfilter" type="gaussian"/>
 		</film>
