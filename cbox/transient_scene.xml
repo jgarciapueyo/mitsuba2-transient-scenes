@@ -1,7 +1,7 @@
 <scene version="2.0.0">
     <!-- <integrator type="direct"/> -->
     <integrator type="transientpath">
-        <integer name="max_depth" value="4"/>
+        <integer name="max_depth" value="10"/>
     </integrator>
 
     <sensor type="perspective">
@@ -16,13 +16,13 @@
                     up    ="  0,   1,    0"/>
         </transform>
         <sampler type="independent">  <!-- ldsampler -->
-            <integer name="sample_count" value="128"/>
+            <integer name="sample_count" value="256"/>
         </sampler>
         <film type="streakhdrfilm" name="streakfilm">
-            <integer name="width" value="512"/>
-            <integer name="height" value="512"/>
-            <integer name="time" value="200"/>
-            <float name="exposure_time" value="15"/>
+            <integer name="width" value="1024"/>
+            <integer name="height" value="1024"/>
+            <integer name="time" value="600"/>
+            <float name="exposure_time" value="5"/>
             <float name="time_offset" value="500"/>
             <rfilter name="rfilter" type="gaussian"/>
             <rfilter name="tfilter" type="gaussian"/>
