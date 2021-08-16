@@ -24,8 +24,8 @@
 		<film type="streakhdrfilm">
 			<integer name="width" value="1536"/>
 			<integer name="height" value="1024"/>
-			<integer name="time" value="400"/>
-			<float name="exposure_time" value="0.3"/>
+			<integer name="time" value="260"/>
+			<float name="exposure_time" value="0.5"/>
 			<boolean name="banner" value="true"/>
 			<rfilter name="rfilter" type="gaussian"/>
 		</film>

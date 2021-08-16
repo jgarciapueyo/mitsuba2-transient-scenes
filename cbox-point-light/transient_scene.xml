@@ -21,8 +21,8 @@
         <film type="streakhdrfilm" name="streakfilm">
             <integer name="width" value="1024"/>
             <integer name="height" value="1024"/>
-            <integer name="time" value="600"/>
-            <float name="exposure_time" value="5"/>
+            <integer name="time" value="400"/>
+            <float name="exposure_time" value="8"/>
             <float name="time_offset" value="500"/>
             <rfilter name="rfilter" type="gaussian"/>
             <rfilter name="tfilter" type="gaussian"/>

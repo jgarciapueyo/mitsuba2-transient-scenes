@@ -15,8 +15,8 @@
 		<film type="streakhdrfilm" >
 			<integer name="width" value="1024" />
 			<integer name="height" value="1024" />
-			<integer name="time" value="500" />
-			<float name="exposure_time" value="0.1" />
+			<integer name="time" value="400" />
+			<float name="exposure_time" value="0.12" />
 			<string name="fileFormat" value="openexr" />
 			<string name="pixelFormat" value="rgb" />
 			<boolean name="banner" value="false" />
