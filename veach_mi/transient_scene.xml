@@ -5,7 +5,7 @@
 -->
 <scene version="0.4.0">
 	<integrator type="transientpath">
-		<integer name="maxDepth" value="10"/>
+		<integer name="maxDepth" value="5"/>
 	</integrator>
 
 	<sensor type="perspective">
@@ -25,7 +25,7 @@
 			<integer name="width" value="1536"/>
 			<integer name="height" value="1024"/>
 			<integer name="time" value="260"/>
-			<float name="exposure_time" value="0.5"/>
+			<float name="exposure_time" value="0.3"/>
 			<boolean name="banner" value="true"/>
 			<rfilter name="rfilter" type="gaussian"/>
 		</film>

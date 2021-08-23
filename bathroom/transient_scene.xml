@@ -16,7 +16,7 @@
 			<integer name="width" value="1024" />
 			<integer name="height" value="1024" />
 			<integer name="time" value="400" />
-			<float name="exposure_time" value="0.12" />
+			<float name="exposure_time" value="0.08" />
 			<string name="fileFormat" value="openexr" />
 			<string name="pixelFormat" value="rgb" />
 			<boolean name="banner" value="false" />

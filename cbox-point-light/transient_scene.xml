@@ -22,8 +22,8 @@
             <integer name="width" value="1024"/>
             <integer name="height" value="1024"/>
             <integer name="time" value="400"/>
-            <float name="exposure_time" value="8"/>
-            <float name="time_offset" value="500"/>
+            <float name="exposure_time" value="6"/>
+            <float name="time_offset" value="1100"/>
             <rfilter name="rfilter" type="gaussian"/>
             <rfilter name="tfilter" type="gaussian"/>
             <boolean name="high_quality_edges" value="true"/>

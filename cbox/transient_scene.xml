@@ -16,7 +16,7 @@
                     up    ="  0,   1,    0"/>
         </transform>
         <sampler type="independent">  <!-- ldsampler -->
-            <integer name="sample_count" value="8"/>
+            <integer name="sample_count" value="256"/>
         </sampler>
         <film type="streakhdrfilm" name="streakfilm">
             <integer name="width" value="1024"/>
