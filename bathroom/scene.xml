@@ -13,8 +13,8 @@
 			<integer name="sampleCount" value="256" />
 		</sampler>
 		<film type="hdrfilm" >
-			<integer name="width" value="1024" />
-			<integer name="height" value="1024" />
+			<integer name="width" value="1280" />
+			<integer name="height" value="960" />
 			<string name="fileFormat" value="openexr" />
 			<string name="pixelFormat" value="rgb" />
 			<boolean name="banner" value="false" />

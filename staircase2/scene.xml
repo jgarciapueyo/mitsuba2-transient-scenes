@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <scene version="0.5.0" >
-	<integrator type="volpath" >
+	<integrator type="path" >
 		<integer name="maxDepth" value="65" />
-		<boolean name="strictNormals" value="true" />
 	</integrator>
 	<sensor type="perspective" >
 		<float name="fov" value="70" />
 		<transform name="toWorld" >
 			<matrix value="-0.435524 -4.21474e-008 -0.900177 6.91182 -8.15734e-015 1 -4.68212e-008 1.65163 0.900177 -2.03917e-008 -0.435523 2.55414 0 0 0 1"/>
 		</transform>
-		<sampler type="sobol" >
-			<integer name="sampleCount" value="64" />
+		<sampler type="independent" >
+			<integer name="sampleCount" value="256" />
 		</sampler>
-		<film type="ldrfilm" >
-			<integer name="width" value="1024" />
-			<integer name="height" value="1024" />
-			<string name="fileFormat" value="png" />
+		<film type="hdrfilm" >
+			<integer name="width" value="1280" />
+			<integer name="height" value="720" />
+			<string name="fileFormat" value="openexr" />
 			<string name="pixelFormat" value="rgb" />
-			<float name="gamma" value="2.2" />
 			<boolean name="banner" value="false" />
-			<rfilter type="tent" />
+			<rfilter name="rfilter" type="tent" />
+			<boolean name="high_quality_edges" value="true" />
 		</film>
 	</sensor>
 	<bsdf type="dielectric" id="Glass" >
@@ -36,7 +35,7 @@
 			<boolean name="nonlinear" value="true" />
 			<texture name="diffuseReflectance" type="bitmap" >
 				<string name="filename" value="textures/wood5.jpg" />
-				<string name="filterType" value="trilinear" />
+				<string name="filterType" value="bilinear" />
 			</texture>
 		</bsdf>
 	</bsdf>
@@ -49,7 +48,7 @@
 			<boolean name="nonlinear" value="true" />
 			<texture name="diffuseReflectance" type="bitmap" >
 				<string name="filename" value="textures/Tiles.jpg" />
-				<string name="filterType" value="trilinear" />
+				<string name="filterType" value="bilinear" />
 			</texture>
 		</bsdf>
 	</bsdf>
@@ -62,7 +61,7 @@
 		<bsdf type="diffuse" >
 			<texture name="reflectance" type="bitmap" >
 				<string name="filename" value="textures/Wallpaper.jpg" />
-				<string name="filterType" value="trilinear" />
+				<string name="filterType" value="bilinear" />
 			</texture>
 		</bsdf>
 	</bsdf>
@@ -75,7 +74,6 @@
 		<bsdf type="roughconductor" >
 			<float name="alpha" value="0.1" />
 			<string name="distribution" value="ggx" />
-			<float name="extEta" value="1" />
 			<rgb name="specularReflectance" value="1, 1, 1"/>
 			<rgb name="eta" value="1.65746, 0.880369, 0.521229"/>
 			<rgb name="k" value="9.22387, 6.26952, 4.837"/>
@@ -85,7 +83,6 @@
 		<bsdf type="roughconductor" >
 			<float name="alpha" value="0.1" />
 			<string name="distribution" value="ggx" />
-			<float name="extEta" value="1" />
 			<rgb name="specularReflectance" value="1, 1, 1"/>
 			<rgb name="eta" value="4.36968, 2.9167, 1.6547"/>
 			<rgb name="k" value="5.20643, 4.23136, 3.75495"/>
@@ -213,10 +210,12 @@
 		</transform>
 		<boolean name="faceNormals" value="true" />
 		<ref id="Glass" />
+		<!--
 		<medium type="homogeneous" name="interior" >
 			<rgb name="sigmaS" value="0, 0, 0"/>
 			<rgb name="sigmaA" value="0.5, 0.2, 0.4"/>
 		</medium>
+		-->
 	</shape>
 	<shape type="obj" >
 		<string name="filename" value="models/Mesh001.obj" />
