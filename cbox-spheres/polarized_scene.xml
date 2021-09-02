@@ -2,7 +2,7 @@
     <!-- <integrator type="direct"/> -->
     <integrator type="stokes">
         <integrator type="path">
-            <integer name="max_depth" value="5"/>
+            <integer name="max_depth" value="10"/>
         </integrator>
     </integrator>
 
@@ -18,11 +18,11 @@
                     up    ="  0,   1,    0"/>
         </transform>
         <sampler type="independent">  <!-- ldsampler -->
-            <integer name="sample_count" value="1"/>
+            <integer name="sample_count" value="256"/>
         </sampler>
         <film type="hdrfilm">
-            <integer name="width" value="256"/>
-            <integer name="height" value="256"/>
+            <integer name="width" value="1024"/>
+            <integer name="height" value="1024"/>
             <rfilter name="rfilter" type="gaussian"/>
             <boolean name="high_quality_edges" value="true"/>
         </film>

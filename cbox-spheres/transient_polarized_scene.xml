@@ -2,7 +2,7 @@
     <!-- <integrator type="direct"/> -->
     <integrator type="transientstokes">
         <integrator type="transientpath">
-            <integer name="max_depth" value="5"/>
+            <integer name="max_depth" value="10"/>
         </integrator>
     </integrator>
 
@@ -18,13 +18,13 @@
                     up    ="  0,   1,    0"/>
         </transform>
         <sampler type="independent">  <!-- ldsampler -->
-            <integer name="sample_count" value="4"/>
+            <integer name="sample_count" value="256"/>
         </sampler>
         <film type="streakhdrfilm" name="streakfilm">
-            <integer name="width" value="256"/>
-            <integer name="height" value="256"/>
-            <integer name="time" value="200"/>
-            <float name="exposure_time" value="16"/>
+            <integer name="width" value="1024"/>
+            <integer name="height" value="1024"/>
+            <integer name="time" value="400"/>
+            <float name="exposure_time" value="8"/>
             <float name="time_offset" value="500"/>
             <rfilter name="rfilter" type="gaussian"/>
             <rfilter name="tfilter" type="gaussian"/>
