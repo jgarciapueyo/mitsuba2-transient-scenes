@@ -1,7 +1,8 @@
 <scene version="2.0.0">
     <!-- <integrator type="direct"/> -->
     <integrator type="path">
-        <integer name="max_depth" value="15"/>
+        <integer name="max_depth" value="5"/>
+        <integer name="samples_per_pass" value="1" />
     </integrator>
 
     <sensor type="perspective">
