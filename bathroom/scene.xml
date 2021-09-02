@@ -2,19 +2,22 @@
 
 <scene version="0.5.0" >
 	<integrator type="path" >
-		<integer name="maxDepth" value="17" />
+		<integer name="maxDepth" value="15" />
 	</integrator>
 	<sensor type="perspective" >
-		<float name="fov" value="55" />
+		<float name="fov" value="70" />
 		<transform name="toWorld" >
-			<matrix value="-0.659198 0.0116337 -0.751879 0.00724053 0 0.99988 0.015471 0.912405 0.751969 0.0101985 -0.659119 -0.227584 0 0 0 1"/>
+			<matrix value="-0.7630920713271694 0.0116337 -0.6461845901308776 0.00724053 
+0.002286759399586206 0.99988 0.015301064422072215 0.912405 
+0.6462852785020594 0.0101985 -0.7630272419209655 -0.227584 
+0.0 0.0 0.0 1.0"/>
 		</transform>
 		<sampler type="independent" >
 			<integer name="sampleCount" value="256" />
 		</sampler>
 		<film type="hdrfilm" >
 			<integer name="width" value="1280" />
-			<integer name="height" value="960" />
+			<integer name="height" value="720" />
 			<string name="fileFormat" value="openexr" />
 			<string name="pixelFormat" value="rgb" />
 			<boolean name="banner" value="false" />
